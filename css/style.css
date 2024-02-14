@@ -21,49 +21,79 @@ body {
     color: var(--color-main);
 }
 
+.debug {
+    border: 3px solid red;
+}
+
 /* main  */
 header {
     width: 100%;
     height: 50px;
 }
-main{
+
+main {
     height: calc(100% - 120px);
     width: 100%;
     overflow-y: auto;
-    padding: 20px;
+    padding: 20px 50px;
     gap: 10px;
 }
+
 #app {
     width: 100%;
     height: 100vh;
 }
-#toolbar{
-    background-color: var(--color-footer-bg);
-    height: 70px;
-}
-.user{
-    width: calc(100% / 7 - 10px);
+
+.user {
+    min-width: calc(100% / 7 - 10px);
     aspect-ratio: 16 / 9;
-    background-color: #4bc800;
-    min-width: 200px;
+    position: relative;
 }
+
 .user img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
+.name {
+    display: inline-block;
+    position: absolute;
+    padding: 3px;
+    background-color: var(--color-element-bg);
+    left: 0;
+    bottom: 0;
+}
+
+div.name::before {
+    content: "\f131";
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+}
+
+#toolbar {
+    background-color: var(--color-footer-bg);
+    height: 70px;
+}
+
 /* utility */
-.d-flex{
+.d-flex {
     display: flex;
 }
-.flex-end{
+
+.jc-center {
+    justify-content: center;
+}
+
+.flex-end {
     justify-content: flex-end;
 }
+
 .align-items {
     align-items: center;
-    align-content: center;
 }
-.wrap{
+
+.wrap {
     flex-wrap: wrap
 }
