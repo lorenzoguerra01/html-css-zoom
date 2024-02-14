@@ -21,14 +21,15 @@ body {
     color: var(--color-main);
 }
 
-.debug {
+/* .debug {
     border: 3px solid red;
-}
+} */
 
 /* main  */
 header {
     width: 100%;
     height: 50px;
+    padding-top: 3px;
 }
 
 main {
@@ -60,10 +61,11 @@ main {
 .name {
     display: inline-block;
     position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 3px;
-    background-color: var(--color-element-bg);
     left: 0;
     bottom: 0;
+    font-size: x-small;
 }
 
 div.name::before {
@@ -71,17 +73,61 @@ div.name::before {
     font-family: 'Font Awesome\ 5 Free';
     font-weight: 900;
 }
-
+/* footer  */
 #toolbar {
     background-color: var(--color-footer-bg);
     height: 70px;
 }
+footer {
+    font-size: x-small;
+}
+footer div {
+    color: var(--color-end);
+    height: 100%;
+    padding-left:20px;
+    padding-right:20px;
+    background-color: var(--color-element-bg);
+    font-weight: 700;
+}
+footer ul li{
+    padding: 0 10px;
+    gap: 8px;
+}
+.fa-share-from-square{
+    color: var(--color-share);
+}
 
+footer .fa-solid:not(.fa-angle-up) {
+    font-size: x-large;
+}
 /* utility */
+.element-bg{
+    height: min-content;
+    background-color: var(--color-element-bg);
+    margin-left: 10px;
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-size: x-small;
+}
+.d-blocK{
+    display: block;
+}
+.ta-center{
+    text-align: center;
+}
+/* flex-utility */
 .d-flex {
     display: flex;
 }
-
+.column {
+    flex-direction: column;
+}
+.row{
+    flex-direction: row;
+}
+.space-between{
+    justify-content: space-between;
+}
 .jc-center {
     justify-content: center;
 }
