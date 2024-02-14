@@ -78,6 +78,7 @@ div.name::before {
 #toolbar {
     background-color: var(--color-footer-bg);
     height: 70px;
+    overflow: auto;
 }
 footer {
     font-size: x-small;
