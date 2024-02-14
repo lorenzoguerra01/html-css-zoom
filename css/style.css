@@ -1,0 +1,69 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* general  */
+:root {
+    --color-main-bg: #000000;
+    --color-footer-bg: #222222;
+    --color-element-bg: #4a4a4a;
+    --color-share: #4bc800;
+    --color-main: #ffffff;
+    --color-end: #e20000;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--color-main-bg);
+    color: var(--color-main);
+}
+
+/* main  */
+header {
+    width: 100%;
+    height: 50px;
+}
+main{
+    height: calc(100% - 120px);
+    width: 100%;
+    overflow-y: auto;
+    padding: 20px;
+    gap: 10px;
+}
+#app {
+    width: 100%;
+    height: 100vh;
+}
+#toolbar{
+    background-color: var(--color-footer-bg);
+    height: 70px;
+}
+.user{
+    width: calc(100% / 7 - 10px);
+    aspect-ratio: 16 / 9;
+    background-color: #4bc800;
+    min-width: 200px;
+}
+.user img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* utility */
+.d-flex{
+    display: flex;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+.align-items {
+    align-items: center;
+    align-content: center;
+}
+.wrap{
+    flex-wrap: wrap
+}
